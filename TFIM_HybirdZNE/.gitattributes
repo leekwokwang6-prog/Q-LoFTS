@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.pkl -text
+*.pth -text
+*.pdf -text
+*.png -text
+*.zip -text

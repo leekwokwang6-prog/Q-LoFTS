@@ -1,0 +1,72 @@
+{
+  "noise_level": 1,
+  "num_qubits": 10,
+  "num_layers": 1,
+  "input_dim": 19,
+  "sample_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "train_seeds": [
+    0
+  ],
+  "num_samples": 5000,
+  "evaluate_count": 5000,
+  "evaluation_workers": 10,
+  "train_count": 4000,
+  "val_start": 4000,
+  "val_count": 500,
+  "hidden_units": 128,
+  "max_freq": 1,
+  "dropout_rate": 0.0,
+  "epochs": 3500,
+  "hamiltonian": {
+    "pbc": false,
+    "hzz": 1,
+    "hxx": 0,
+    "hyy": 0,
+    "hx": 1,
+    "hy": 0,
+    "hz": 0,
+    "sparse": false
+  },
+  "noise": {
+    "two_qubit_channel_depolarizing_p": 0.01,
+    "single_qubit_channel_depolarizing_p": 0.0005,
+    "bit_flip_p": 0.01,
+    "two_qubit_channel_T1": 150000,
+    "two_qubit_channel_T2": 120000,
+    "two_qubit_channel_gateTime": 100,
+    "two_qubit_channel_esp": 0.01,
+    "single_qubit_channel_T1": 150000,
+    "single_qubit_channel_T2": 120000,
+    "single_qubit_channel_gateTime": 32,
+    "single_qubit_channel_esp": 0.01
+  },
+  "vqe": {
+    "checkpoint_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "parameter_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "max_iteration": 2000,
+    "tolerance": 0.0001,
+    "model_root": "frozen/models",
+    "sample_root": "frozen/data",
+    "output_root": "outputs/vqe"
+  },
+  "test_start": 4500,
+  "test_count": 500
+}
